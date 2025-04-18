@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1B5F369A2DB242A900941E0D /* DeviceSettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F36992DB242A900941E0D /* DeviceSettingCoordinator.swift */; };
 		1B5F369C2DB242C100941E0D /* DeviceSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F369B2DB242C100941E0D /* DeviceSettingView.swift */; };
+		1B5F369E2DB2484E00941E0D /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F369D2DB2484E00941E0D /* BaseViewModel.swift */; };
+		1B5F36A02DB248C900941E0D /* DeviceControlVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F369F2DB248C900941E0D /* DeviceControlVM.swift */; };
 		1BC4DF032DB11AB700E5CE6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC4DEFD2DB11AB700E5CE6D /* Preview Assets.xcassets */; };
 		1BC4DF042DB11AB700E5CE6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC4DEFF2DB11AB700E5CE6D /* Assets.xcassets */; };
 		1BC4DF0A2DB11BFD00E5CE6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC4DF092DB11BFD00E5CE6D /* AppDelegate.swift */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		1B5F36992DB242A900941E0D /* DeviceSettingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSettingCoordinator.swift; sourceTree = "<group>"; };
 		1B5F369B2DB242C100941E0D /* DeviceSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSettingView.swift; sourceTree = "<group>"; };
+		1B5F369D2DB2484E00941E0D /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		1B5F369F2DB248C900941E0D /* DeviceControlVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceControlVM.swift; sourceTree = "<group>"; };
 		1BC4DEEC2DB11AB000E5CE6D /* SwiftUICoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC4DEFD2DB11AB700E5CE6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1BC4DEFF2DB11AB700E5CE6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 				1BC4DF122DB15B2300E5CE6D /* ScreenConfiguration.swift */,
 				1BC4DF142DB1619F00E5CE6D /* NaviBarView.swift */,
 				1BC4DF492DB1FBEB00E5CE6D /* CommonButton.swift */,
+				1B5F369D2DB2484E00941E0D /* BaseViewModel.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 				1B5F36982DB2429200941E0D /* Setting */,
 				1BC4DF4E2DB230F300E5CE6D /* DeviceControlCoordinator.swift */,
 				1BC4DF512DB2325200E5CE6D /* DeviceControlView.swift */,
+				1B5F369F2DB248C900941E0D /* DeviceControlVM.swift */,
 			);
 			path = DeviceControl;
 			sourceTree = "<group>";
@@ -342,6 +348,7 @@
 				1BC4DF112DB1596100E5CE6D /* ScreenContainerView.swift in Sources */,
 				1BC4DF2A2DB1F0D100E5CE6D /* Font.swift in Sources */,
 				1BC4DF452DB1FA6B00E5CE6D /* ProfileCoordinator.swift in Sources */,
+				1B5F36A02DB248C900941E0D /* DeviceControlVM.swift in Sources */,
 				1BC4DF0F2DB1472900E5CE6D /* BaseViewController.swift in Sources */,
 				1BC4DF1B2DB1650B00E5CE6D /* View+Ext.swift in Sources */,
 				1BC4DF232DB171B900E5CE6D /* LoginCoordinator.swift in Sources */,
@@ -351,6 +358,7 @@
 				1BC4DF3B2DB1F86C00E5CE6D /* BaseNavigationController.swift in Sources */,
 				1BC4DF4A2DB1FBEB00E5CE6D /* CommonButton.swift in Sources */,
 				1BC4DF182DB164DF00E5CE6D /* LayoutSize.swift in Sources */,
+				1B5F369E2DB2484E00941E0D /* BaseViewModel.swift in Sources */,
 				1BC4DF482DB1FAAF00E5CE6D /* MainTabCoordinator.swift in Sources */,
 				1BC4DF302DB1F36A00E5CE6D /* AppStyle.swift in Sources */,
 				1B5F369A2DB242A900941E0D /* DeviceSettingCoordinator.swift in Sources */,

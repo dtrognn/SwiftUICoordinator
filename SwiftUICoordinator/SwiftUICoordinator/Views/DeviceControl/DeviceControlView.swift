@@ -11,6 +11,8 @@ struct DeviceControlView: View {
     private var coordinator: DeviceControlCoordinator
     private var deviceItemData: DeviceItemData
 
+    @StateObject private var vM = DeviceControlVM()
+
     var screenConfiguration: ScreenConfiguration {
         let screenConfiguration = ScreenConfiguration()
         screenConfiguration.showNaviBar = true
@@ -18,6 +20,14 @@ struct DeviceControlView: View {
         screenConfiguration.naviBarConfiguration.coordinator = coordinator
         screenConfiguration.naviBarConfiguration.title = deviceItemData.name
         screenConfiguration.supportedOrientations = .all
+
+        screenConfiguration.onViewDidLoad = {
+            print("AAA DeviceControlView onViewDidLoad")
+        }
+
+        screenConfiguration.onViewAppear = {
+            print("AAA DeviceControlView onViewAppear")
+        }
         return screenConfiguration
     }
 
@@ -31,8 +41,13 @@ struct DeviceControlView: View {
             VStack {
                 Spacer()
 
-                CommonButton(title: "Navigate to setting") {
-                    coordinator.navigateToSetting(deviceItemData)
+                VStack {
+                    TextField("Enter value", text: $vM.tfValue)
+                        .textFieldStyle(.roundedBorder)
+
+                    CommonButton(title: "Navigate to setting") {
+                        coordinator.navigateToSetting(deviceItemData)
+                    }
                 }
 
                 Spacer()
