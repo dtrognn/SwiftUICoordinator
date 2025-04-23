@@ -77,6 +77,10 @@ class BaseViewController<Content: View>: UIViewController {
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return configuration.supportedOrientations
     }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("JJJ \(String(describing: Self.self)) touchesBegan")
+    }
 }
 
 extension BaseViewController: OrientationConfigurable {
